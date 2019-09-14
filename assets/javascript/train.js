@@ -120,18 +120,18 @@ database.ref().on(
         var nextTrain = moment().add(tMinutesTillTrain, "minutes").format("hh:mm A");
         //         var totalBilled = monthlyRate * monthsWorked;
         var tRow = $("<tr>");
-        var trainTd = $("<td>").text(trainName);
-        var destTd = $("<td>").text(trainDestination);
-        var trainFrequencyTd = $("<td>").text(trainFrequency);
+        var trainTd = $("<td>").html(trainName);
+        var destTd = $("<td>").html(trainDestination);
+        var trainFrequencyTd = $("<td>").html(trainFrequency);
         var nextTrainTd = $("<td>").text(nextTrain);
         var tMinutesTillTrainTd = $("<td>").text(tMinutesTillTrain);
 
+        $("#x").append(tRow);
         tRow.append(trainTd);
         tRow.append(destTd);
         tRow.append(trainFrequencyTd);
         tRow.append(nextTrainTd);
         tRow.append(tMinutesTillTrainTd);
-        $("#x").append(tRow);
         // var newRow = $("<tr>");
         // newRow.append("<td scope='col'>" + childSnapshot.val().trainName + "</td>");
         // newRow.append("<td scope='col'>" + childSnapshot.val().trainDestination + "</td>");
