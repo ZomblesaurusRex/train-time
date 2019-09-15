@@ -4,3 +4,9 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+#train-table th, td {
+    width: 20%;
+    padding: 0px;
+    display: inline-block;
+
+}

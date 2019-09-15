@@ -8,13 +8,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 <link rel="stylesheet" href="assets/styles/styles.css" class="css">
 
-    <style>
-        #train-table th,
-        td {
-            display: inline-block;
-            width: 16.575%;
-        }
-    </style>
 </head>
 
 <body>
@@ -36,7 +29,7 @@
                 <div class="card mb-4">
                     <div class="card-header">Current Train Schedule</div>
                     <div class="card-body">
-                        <table class="table table-sm table-hover" id="employee-table">
+                        <table class="table table-md table-hover" id="train-table">
                             <thead>
                                 <tr >
                                     <th scope="col">Train Name</th>
@@ -46,7 +39,7 @@
                                     <th scope="col">Minutes Away (mm)</th>
                                 </tr>
                             </thead>
-                            <tbody id="x"></tbody>
+                            <tbody class="x"></tbody>
                         </table>
                     </div>
                 </div>
@@ -77,7 +70,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="frequency-input">Frequency (min)</label>
-                                <input class="form-control" id="frequency-input" placeholder="60" type="text" />
+                                <input class="form-control" id="frequency-input" placeholder="60" type="minutes" />
                             </div>
                             <button class="btn btn-primary float-right" id="add-train-btn">
                                 Submit
